@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/xinabox/OD01.svg?branch=master)](https://travis-ci.org/xinabox/OD01)
 # Xinabox OD01
 Library for OD01: OLED Display (0.96 inch)
 
