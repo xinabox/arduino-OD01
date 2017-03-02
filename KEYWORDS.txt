@@ -1,17 +1,24 @@
 #######################################
-# Syntax Coloring Map For Keyboard
+# Syntax Coloring Map For OD01
 #######################################
 
 #######################################
 # Instance				(KEYWORD1)
 #######################################
 
-
+OD01					KEYWORD1
+OLED					KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
+begin					KEYWORD2
+print					KEYWORD2
+println				KEYWORD2
+set2X					KEYWORD2
+set1X					KEYWORD2
+clear					KEYWORD2
 
 #######################################
 # Constants 			(LITERAL1)
