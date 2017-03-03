@@ -1,5 +1,5 @@
 
-# ☒CHIP OD01 [![Build Status](https://travis-ci.org/xinabox/OD01.svg?branch=master)](https://travis-ci.org/xinabox/OD01)
+# ☒CHIP OD01 
 Library for OD01: OLED Display (0.96 inch)
 
 Library is based off the [Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306) written by Limor Fried/Ladyada for Adafruit Industries.
@@ -7,6 +7,6 @@ Library is based off the [Adafruit_SSD1306](https://github.com/adafruit/Adafruit
 ![alt text](extras/OD01.png "Description goes here")
 
 ## Requirments
-  - [xCore Library](https://github.com/xinabox/xCore)
+  - [☒Core Library](https://github.com/xinabox/xCore)
   - [Arduino IDE 1.8.1](https://www.arduino.cc/en/main/software)
   - ☒CHIP CWO1 or CC01 or CR01
