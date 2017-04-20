@@ -21,12 +21,11 @@
 
 const int DELAY_TIME = 2000;
 
-
 String I2Cfound1 = "";
 String I2Cfound2 = "";
 
 void setup() {
-	Wire.begin(2,14);
+Wire.begin(2,14);
 	OLED.begin();
 	OD01.println("\nI2C Scanner");
 	OD01.println("===========");
@@ -57,11 +56,11 @@ void I2C_scan()
       OD01.print(v);
       OD01.print(" ");
       nDevices = 1;
-	  wrap++;
-	  if(wrap == 4){
-		OD01.println();
-		wrap = 0;
-	  }
+	  	wrap++;
+	  	if(wrap == 4){
+			OD01.println();
+			wrap = 0;
+	  	}
     }
   }
   if (nDevices == 0) {
