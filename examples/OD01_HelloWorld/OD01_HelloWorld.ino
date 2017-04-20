@@ -30,7 +30,7 @@ const int DELAY_TIME = 2000;
 
 void setup() {
   // Starts the I2C communication
-  Wire.begin();
+  Wire.begin(2,14);
   
   // Start the OLED Display OD01
   OLED.begin();
