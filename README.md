@@ -1,6 +1,6 @@
 
 # ☒CHIP OD01 
-<img src="extras/OD01.png" width="300" align="right">
+<img src="extras/OD01 V0.4.11.JPG" width="300" align="right">
 Library for OD01: OLED Display (0.96 inch)
 
 Library is based off the [Adafruit_SSD1306](https://github.com/adafruit/Adafruit_SSD1306) written by Limor Fried/Ladyada for Adafruit Industries.
