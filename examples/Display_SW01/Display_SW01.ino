@@ -29,6 +29,8 @@
 
 const int DELAY_TIME = 1500;
 
+xSW01 SW01;
+
 void setup() {
   // Starts the I2C communication
   Wire.begin(2,14);
@@ -58,7 +60,7 @@ void loop() {
   
   // Request SW01 to get the temperature measurement 
   // Temperature  request is degrees celcuis  
-  temperature = SW01.getTemperature_C();
+  temperature = SW01.getTempC();
   
   // Display the temperature on the OLED display OD01   
   OD01.print("Temperature: ");
@@ -67,7 +69,7 @@ void loop() {
 
   // Request SW01 to get the temperature measurement 
   // Temperature  request is farenheit  
-  temperature = SW01.getTemperature_F();
+  temperature = SW01.getTempF();
   
   // Display the temperature on the OLED display OD01   
   OD01.print("Temperature: ");
