@@ -9,31 +9,24 @@
 	
 	The display communicates over the I2C Bus.
 
-  Currently Supported on the following ☒CHIP:
-  - CW01
-  - CC01
-  - CR01
-  
-  The sensor communicates over the I2C Bus.
-
-  ------------------------TIPS--------------------------
-  Change this line ----->Wire.begin(2,14);
-  to this ----->Wire.begin();
-  to allow this sensor to communicate with CC01 and CR01
-	
 *************************************************************/
 
 #include "xCore.h"
 #include "xOD01.h"
 
+xOD01 OD01;
+
 const int DELAY_TIME = 2000;
 
 void setup() {
   // Starts the I2C communication
-  Wire.begin(2,14);
+#ifdef ESP8266
+	Wire.pins(2, 14);
+#endif
+  Wire.begin();
   
   // Start the OLED Display OD01
-  OLED.begin();
+  OD01.begin();
 
   // set display tex to double size
   OD01.set2X();

@@ -2,22 +2,19 @@
 	This is an examples for the OD01 0.96 inch OLED Display
 	
 	You can buy one on our store!
-	-----> https://xinabox.cc/OD01/
+	-----> https://xinabox.cc/products/OD01/
 	
 	This example display a list of I2C devices addresses 
 	available on the I2C Bus on the OD01 OLED Display
 	
 	The display communicates over the I2C Bus.
-
-	------------------------TIPS--------------------------
-	Change this line ----->Wire.begin(2,14);
-	to this			 ----->Wire.begin();
-	to allow this sensor to communicate with CC01 and CR01	
 	
 *************************************************************/
 
 #include <xCore.h>
 #include <xOD01.h>
+
+xOD01 OD01;
 
 const int DELAY_TIME = 2000;
 
@@ -25,8 +22,11 @@ String I2Cfound1 = "";
 String I2Cfound2 = "";
 
 void setup() {
-Wire.begin(2,14);
-	OLED.begin();
+#ifdef ESP8266
+	Wire.pins(2,14);
+#endif
+Wire.begin();
+	OD01.begin();
 	OD01.println("\nI2C Scanner");
 	OD01.println("===========");
 }
