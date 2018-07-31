@@ -29,12 +29,17 @@
 
 const int DELAY_TIME = 1500;
 
+xSL01 SL01;
+
 void setup() {
   // Starts the I2C communication
-  Wire.begin(2,14);
+#ifdef ESP8266
+  Wire.pins(2, 14);
+#endif
+  Wire.begin();
   
   // Start the OLED Display OD01
-  OLED.begin();
+  OD01.begin();
 
   // Start the  SW01 Sensor
   SL01.begin();

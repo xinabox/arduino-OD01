@@ -15,24 +15,15 @@
 #include "SSD1306Ascii.h"
 #include "SSD1306AsciiWire.h"
 
-// Device I2C Address
-#define OD01_I2C_ADDRESS   		0x3C  
-
-SSD1306AsciiWire OD01;
-
 class xOD01: public SSD1306AsciiWire
 {
 	public:
-		xOD01(){}
-		void begin(void){
-			OD01.start(&Adafruit128x64, OD01_I2C_ADDRESS);
-			OD01.setFont(Adafruit5x7);
-			OD01.clear();
-			OD01.setScroll(true);
-			OD01.set1X();
-		}
-};
+		
+		xOD01(void);
+		xOD01(uint8_t addr);
 
-extern xOD01 OLED;
-	
+		void begin();
+	private:
+		uint8_t OD01_I2C_ADDRESS;
+};
 #endif
