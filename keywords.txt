@@ -3,22 +3,22 @@
 #######################################
 
 #######################################
-# Instance				(KEYWORD1)
+# Instance	(KEYWORD1)
 #######################################
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-begin					KEYWORD2
-print					KEYWORD2
-println				KEYWORD2
-set2X					KEYWORD2
-set1X					KEYWORD2
-clear					KEYWORD2
+begin	KEYWORD2
+print	KEYWORD2
+println	KEYWORD2
+set2X	KEYWORD2
+set1X	KEYWORD2
+clear	KEYWORD2
 
 #######################################
-# Constants 			(LITERAL1)
+# Constants	(LITERAL1)
 #######################################
 
 
