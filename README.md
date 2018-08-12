@@ -9,7 +9,7 @@ Library is based off the [Adafruit_SSD1306](https://github.com/adafruit/Adafruit
 
 ## Requirements
   - [☒Core Library](https://github.com/xinabox/xCore)
-  - [Arduino IDE 1.8.1](https://www.arduino.cc/en/main/software)
+  - [Arduino IDE](https://www.arduino.cc/en/main/software)
   - ☒CHIP [Core](https://xinabox.cc/collections/core)
   
 ## Installation Guide
