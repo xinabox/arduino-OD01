@@ -6,8 +6,8 @@
 	-	I2C Communication
 */
 
-#ifndef xOD01_h
-#define xOD01_h
+#ifndef Arduino_OD01_h
+#define Arduino_OD01_h
 
 // System Includes
 #include <Wire.h>
