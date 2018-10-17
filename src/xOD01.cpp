@@ -1,5 +1,5 @@
 // System Includes
-#include "arduino-OC01.h"
+#include <xOD01.h>
 
 xOD01::xOD01(void):SSD1306AsciiWire()
 {

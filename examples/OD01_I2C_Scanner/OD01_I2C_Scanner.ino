@@ -12,7 +12,7 @@
 *************************************************************/
 
 #include <xCore.h>
-#include <arduino-OD01.h>
+#include <xOD01.h>
 
 xOD01 OD01;
 

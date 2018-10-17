@@ -6,8 +6,8 @@
 	-	I2C Communication
 */
 
-#ifndef arduino-OD01_h
-#define arduino-OD01_h
+#ifndef xOD01_h
+#define xOD01_h
 
 // System Includes
 #include <Wire.h>
@@ -26,4 +26,5 @@ class xOD01: public SSD1306AsciiWire
 	private:
 		uint8_t OD01_I2C_ADDRESS;
 };
+
 #endif

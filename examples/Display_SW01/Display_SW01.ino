@@ -11,9 +11,9 @@
 
 *************************************************************/
 
-#include <arduino-SW01.h>
+#include <xSW01.h>
 #include <xCore.h>
-#include <arduino-OD01.h>
+#include <xOD01.h>
 
 const int DELAY_TIME = 1500;
 
