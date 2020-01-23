@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/xinabox/arduino-OD01.svg?branch=master)](https://travis-ci.org/xinabox/arduino-OD01)
+[![GitHub issues](https://img.shields.io/github/issues/xinabox/arduino-OD01.svg)](https://github.com/xinabox/arduino-OD01/issues)
 
 # ☒CHIP OD01 
 <img src="extras/OD01 V0.4.11.JPG" width="35%" height="auto" align="right">
