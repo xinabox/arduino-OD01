@@ -1,0 +1,24 @@
+language: python
+python:
+    - "2.7"
+
+sudo: false
+cache:
+    directories:
+        - "~/.platformio"
+        
+env:
+    - PLATFORMIO_CI_SRC=examples/Display_SL01
+    - PLATFORMIO_CI_SRC=examples/Display_SW01
+    - PLATFORMIO_CI_SRC=examples/OD01_HelloWorld
+    - PLATFORMIO_CI_SRC=examples/OD01_I2C_Scanner
+    
+install:
+    - pip install -U platformio
+    - platformio update
+
+    - wget https://github.com/xinabox/arduino-CORE/archive/master.zip -O /tmp/arduino-CORE.zip
+    - unzip /tmp/arduino-CORE.zip -d /tmp/
+
+script:
+    - platformio ci --lib="." --lib="/tmp/arduino-CORE-master" --board=uno --board=zero --board=xinabox_cw01 --board=xinabox_cw02
