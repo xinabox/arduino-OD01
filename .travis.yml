@@ -19,6 +19,12 @@ install:
 
     - wget https://github.com/xinabox/arduino-CORE/archive/master.zip -O /tmp/arduino-CORE.zip
     - unzip /tmp/arduino-CORE.zip -d /tmp/
+    
+    - wget https://github.com/xinabox/arduino-SW01/archive/master.zip -O /tmp/arduino-SW01.zip
+    - unzip /tmp/arduino-SW01.zip -d /tmp/
+    
+    - wget https://github.com/xinabox/arduino-SL01/archive/master.zip -O /tmp/arduino-SL01.zip
+    - unzip /tmp/arduino-SL01.zip -d /tmp/
 
 script:
-    - platformio ci --lib="." --lib="/tmp/arduino-CORE-master" --board=uno --board=zero --board=xinabox_cw01 --board=xinabox_cw02
+    - platformio ci --lib="." --lib="/tmp/arduino-CORE-master" --lib="/tmp/arduino-SL01-master" --lib="/tmp/arduino-SW01-master" --board=uno --board=zero --board=xinabox_cw01 --board=xinabox_cw02
